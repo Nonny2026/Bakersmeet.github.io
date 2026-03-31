@@ -3,6 +3,8 @@ import { defineconfig, env } from
 
 export default defineconfig({schema: "./schema.prisma",
                              datasource: {
+                             //This tells prisma to look at 
+                             the DATABASE_URL you pasted in Render 
                                url: env("DATABASE_URL"),
                              },
                             });
